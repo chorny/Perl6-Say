@@ -4,3 +4,4 @@ MANIFEST
 README
 Say.pm
 t/1.t
+t/export.t

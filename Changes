@@ -9,3 +9,11 @@ Revision history for Perl extension Perl6::Say.
 0.02	Sun Mar 28 13:11:42 2004
 
 	- Fixed bug in Makefile (thanks Stefan!)
+
+
+0.03	Thu Mar 10 23:26:14 2005
+
+    - Changed $\ interaction in line with changes in Perl 6 design
+      (C<say @stuff> is now always equivalent to C<print @stuff, "\n">)
+
+    - Fixed multiple export (added import()) (thanks Schwern)

@@ -1,5 +1,5 @@
 ==============================================================================
-                    Release of version 0.02 of Perl6::Say
+                    Release of version 0.03 of Perl6::Say
 ==============================================================================
 
 
@@ -35,10 +35,13 @@ it under the same terms as Perl itself.
 
 ==============================================================================
 
-CHANGES IN VERSION 0.02
+CHANGES IN VERSION 0.03
 
 
-	- Fixed bug in Makefile (thanks Stefan!)
+    - Changed $\ interaction in line with changes in Perl 6 design
+      (C<say @stuff> is now always equivalent to C<print @stuff, "\n">)
+
+    - Fixed multiple export (added import()) (thanks Schwern)
 
 
 ==============================================================================

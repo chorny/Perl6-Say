@@ -1,14 +1,28 @@
 package Perl6::Say;
 use IO::Handle;
-$VERSION = '0.02';
+$VERSION = '0.03';
+
+# Implementation...
+use Scalar::Util 'openhandle';
+use Carp;
+
+sub say {
+    my $handle = openhandle($_[0]) ? shift : \*STDOUT;
+    my $warning;
+    local $SIG{__WARN__} = sub { $warning = join q{}, @_ };
+    my $res = print {$handle} @_, "\n";
+    return $res if $res;
+    $warning =~ s/[ ]at[ ].*//xms;
+    croak $warning;
+}
 
 # Handle direct calls...
 
-*{caller().'::say'} = sub { print @_, defined $\ ? "" : "\n" };
+sub import { *{caller().'::say'} = \&say; }
 
 # Handle OO calls:
 
-sub IO::Handle::say { my ($fh) = shift; print {$fh} @_, defined $\ ? "" : "\n" }
+*IO::Handle::say = \&say;
 
 1;
 __END__
@@ -44,6 +58,7 @@ filehandles are open for output, you can use any of these:
 
     say @data;
     say FH @data;
+    say $fh, @data;
     FH->say(@data);
     *FH->say(@data);
     (\*FH)->say(@data);
@@ -60,29 +75,12 @@ but not any of these:
 
 =head2 Interaction with output record separator
 
-In Perl 6, C<say> honours the output stream's output record separator.
-That is, it only appends a newline if the output stream to which it's writing
-doesn't have an output record separator defined:
+In Perl 6, S<C<say @stuff>> is exactly equivalent to
+S<C<Core::print @stuff, "\n">>.
 
-    # Perl 6 code...
-
-    say $FH: "boo";      # prints: "boo\n"
-
-    $fh.ors = "\r";
-    say $FH: "boo";      # prints: "boo\r"
-
-To emulate this behaviour as best it can, C<Perl6::Say::say> prints
-a newline after printing its arguments only if C<$\> is undefined. If C<$\>
-is defined it prints the value in C<$\> after printing its arguments.
-
-    # Perl 5 code...
-
-    use Perl6::Say;
-
-    say FH "boo";        # prints: "boo\n"
-
-    local $\ = "\r";
-    say FH "boo";        # prints: "boo\r"
+That means that a call to C<say> appends any output record separator
+I<after> the added newline (though in Perl 6, the ORS is an attribute of
+the filehandle being used, rather than a glonal C<$/> variable).
 
 
 =head1 WARNING

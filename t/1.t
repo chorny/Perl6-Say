@@ -7,7 +7,7 @@ STDOUT->say('ok 4 - Say it directly');
 
 Test::Builder->current_test(4);
 
-my $str;
+my $str = q{};
 open FH, '>', \$str;
 
 ok( (say FH 'what'), 					'Indirectly said:  "what"' );
@@ -69,7 +69,7 @@ open STDOUT, '>', \$str;
 $\ = " [STOP] ";
 
 ok( (say "ORS"),						'Said simply with ORS' );
-is( $str, "ORS [STOP] ",				'Heard simply with ORS' );
+is( $str, "ORS\n [STOP] ",				'Heard simply with ORS' );
 
 undef $\;
 
@@ -82,7 +82,7 @@ open $fh, '>', \$str;
 $\ = " [STOP] ";
 
 ok( ($fh->say("ORS")),					'Said methodically with ORS' );
-is( $str, "ORS [STOP] ",				'Heard methodically with ORS' );
+is( $str, "ORS\n [STOP] ",				'Heard methodically with ORS' );
 
 undef $\;
 
