@@ -1,0 +1,6 @@
+Revision history for Perl extension Perl6::Say.
+
+0.01  Thu Mar 25 22:00:02 2004
+	- original version; created by h2xs 1.22 with options
+		-A -P -X -f -n Perl6::Say
+

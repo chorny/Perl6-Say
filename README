@@ -1,0 +1,48 @@
+==============================================================================
+                    Release of version 0.01 of Perl6::Say
+==============================================================================
+
+
+Perl6/Say version 0.01
+======================
+
+DESCRIPTION
+
+Implements the Perl 6 'say' built-in
+(i.e. 'print' with an automagically appended "\n")
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+None.
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2004 Damian Conway
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself. 
+
+
+
+==============================================================================
+
+CHANGES IN VERSION 0.01
+
+(No changes have been documented for this version)
+
+==============================================================================
+
+AVAILABILITY
+
+Perl6::Say has been uploaded to the CPAN
+
+==============================================================================
