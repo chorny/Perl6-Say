@@ -4,3 +4,8 @@ Revision history for Perl extension Perl6::Say.
 	- original version; created by h2xs 1.22 with options
 		-A -P -X -f -n Perl6::Say
 
+
+
+0.02	Sun Mar 28 13:11:42 2004
+
+	- Fixed bug in Makefile (thanks Stefan!)

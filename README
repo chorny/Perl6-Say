@@ -1,5 +1,5 @@
 ==============================================================================
-                    Release of version 0.01 of Perl6::Say
+                    Release of version 0.02 of Perl6::Say
 ==============================================================================
 
 
@@ -35,9 +35,11 @@ it under the same terms as Perl itself.
 
 ==============================================================================
 
-CHANGES IN VERSION 0.01
+CHANGES IN VERSION 0.02
 
-(No changes have been documented for this version)
+
+	- Fixed bug in Makefile (thanks Stefan!)
+
 
 ==============================================================================
 

@@ -1,6 +1,6 @@
 package Perl6::Say;
 use IO::Handle;
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 # Handle direct calls...
 
