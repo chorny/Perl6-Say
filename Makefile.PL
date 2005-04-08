@@ -2,7 +2,7 @@
 use ExtUtils::MakeMaker;
 WriteMakefile(
 		NAME	=> q[Perl6::Say],
-		VERSION => q[0.03],
+		VERSION => q[0.04],
 		AUTHOR     => 'Damian Conway <damian@local.>',
 
 	     );

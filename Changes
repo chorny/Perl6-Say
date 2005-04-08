@@ -17,3 +17,9 @@ Revision history for Perl extension Perl6::Say.
       (C<say @stuff> is now always equivalent to C<print @stuff, "\n">)
 
     - Fixed multiple export (added import()) (thanks Schwern)
+
+
+0.04	Fri Apr  8 04:03:10 2005
+
+    - Added correct handling of default call to use $_, like print
+      (thanks Schwern)

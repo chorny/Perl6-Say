@@ -1,6 +1,6 @@
 package Perl6::Say;
 use IO::Handle;
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 # Implementation...
 use Scalar::Util 'openhandle';
@@ -8,6 +8,7 @@ use Carp;
 
 sub say {
     my $handle = openhandle($_[0]) ? shift : \*STDOUT;
+    @_ = $_ if !@_;
     my $warning;
     local $SIG{__WARN__} = sub { $warning = join q{}, @_ };
     my $res = print {$handle} @_, "\n";
