@@ -1,51 +1,47 @@
-==============================================================================
-                    Release of version 0.04 of Perl6::Say
-==============================================================================
+Perl6::Say - 'print' -- but no newline needed
 
+This document refers to version 0.05_004 of Perl6::Say.  
+This version was released July 26, 2006.
 
-Perl6/Say version 0.01
-======================
+To install this module on your system, place the tarball archive file in a 
+temporary directory and call the following:
 
-DESCRIPTION
+% gunzip Perl6-Say-0.05_004.tar.gz
+% tar xf Perl6-Say-0.05_004.tar
+% cd Perl6-Say-0.05_004
+% perl Makefile.PL
+% make
+% make test
+% make install
 
-Implements the Perl 6 'say' built-in
-(i.e. 'print' with an automagically appended "\n")
+If during installation you wish to view more information on test results, 
+substitute the following for the sixth line in the sequence of commands
+above:
 
-INSTALLATION
+% make test TEST=VERBOSE
 
-To install this module type the following:
+If you are installing this module over any earlier version, you may 
+substitute the following for the last line in the sequence of commands 
+above:
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+% make install UNINST=1
 
-DEPENDENCIES
+If you are installing this module on a Win32 system with 'nmake', 
+substitute 'nmake' for 'make' in the sequence of commands above.
 
-None.
+In sending e-mail to the maintainer, please put "Perl6::Say", 
+"Perl6-Say" or "Say" in the subject line.
 
-COPYRIGHT AND LICENCE
+Original author:  Damian Conway
 
-Copyright (C) 2004 Damian Conway
+Maintainer since July 2006 (version 0.05_002):  James E Keenan
+CPAN ID:  JKEENAN
+jkeenan@cpan.org
+
+Dependencies:  Uses only modules found in the Perl Core as of 5.007003.
+For use with older Perls, see Makefile.PL.
+
+Copyright (C) 2004 Damian Conway.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
-
-
-
-==============================================================================
-
-CHANGES IN VERSION 0.04
-
-
-    - Added correct handling of default call to use $_, like print
-      (thanks Schwern)
-
-
-==============================================================================
-
-AVAILABILITY
-
-Perl6::Say has been uploaded to the CPAN
-
-==============================================================================

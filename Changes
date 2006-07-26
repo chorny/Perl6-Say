@@ -23,3 +23,17 @@ Revision history for Perl extension Perl6::Say.
 
     - Added correct handling of default call to use $_, like print
       (thanks Schwern)
+
+
+0.05	Mon Apr 25 22:42:54 2005
+
+
+
+
+0.5.1  Sun Jul 16 08:06:28 2006
+
+    - Fixed doc nit
+
+    - Corrected handling of C<select>'d default filehandles
+
+    - Fixed test using Test::Builder (thanks David, Jim, et al.)
