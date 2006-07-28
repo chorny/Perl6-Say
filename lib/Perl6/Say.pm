@@ -1,7 +1,7 @@
 package Perl6::Say;
 use strict;
 use warnings;
-our $VERSION = '0.05_004';
+our $VERSION = '0.06';
 use IO::Handle;
 use Scalar::Util 'openhandle';
 use Carp;
@@ -159,6 +159,12 @@ Damian Conway (damian@conway.org).
 =head2 MAINTAINER
 
 James E Keenan (jkeenan@cpan.org) (effective v0.06, July 2006).
+
+=head1 ACKNOWLEDGMENTS
+
+Thanks to Damian Conway for dreaming this up.  Thanks to David A Golden for a
+close review of the documentation.  Thanks to CPAN tester Jost Krieger for
+reporting an error in my SKIP block count in one test file.
 
 =head1 BUGS AND IRRITATIONS
 

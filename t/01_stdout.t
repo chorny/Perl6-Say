@@ -15,7 +15,7 @@ BEGIN {
 SKIP: {
     eval qq{ require IO::Capture::Stdout; };;
     skip "tests require IO::Capture::Stdout", 
-        11 if $@;
+        13 if $@;
 
     my ($str, $say_sub, $msg);
 

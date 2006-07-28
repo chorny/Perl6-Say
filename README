@@ -1,14 +1,14 @@
 Perl6::Say - 'print' -- but no newline needed
 
-This document refers to version 0.05_004 of Perl6::Say.  
-This version was released July 26, 2006.
+This document refers to version 0.06 of Perl6::Say.  
+This version was released July 29, 2006.
 
 To install this module on your system, place the tarball archive file in a 
 temporary directory and call the following:
 
-% gunzip Perl6-Say-0.05_004.tar.gz
-% tar xf Perl6-Say-0.05_004.tar
-% cd Perl6-Say-0.05_004
+% gunzip Perl6-Say-0.06.tar.gz
+% tar xf Perl6-Say-0.06.tar
+% cd Perl6-Say-0.06
 % perl Makefile.PL
 % make
 % make test
