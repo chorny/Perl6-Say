@@ -2,9 +2,7 @@
 # 03_list.t - test what happens when passing list to say
 use strict;
 use warnings;
-use Test::More 
-tests => 11;
-# qw(no_plan);
+use Test::More tests => 11;
 use lib ( qq{./t/lib} );
 BEGIN {
     use_ok('Perl6::Say');

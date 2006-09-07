@@ -2,9 +2,7 @@
 # 09_ors.t - test interaction with $\
 use strict;
 use warnings;
-use Test::More 
-tests =>  3;
-# qw(no_plan);
+use Test::More tests =>  3;
 use lib ( qq{./t/lib} );
 BEGIN {
     use_ok('Perl6::Say');

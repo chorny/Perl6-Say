@@ -4,36 +4,30 @@ Revision history for Perl extension Perl6::Say.
 	- original version; created by h2xs 1.22 with options
 		-A -P -X -f -n Perl6::Say
 
-
-
 0.02	Sun Mar 28 13:11:42 2004
-
 	- Fixed bug in Makefile (thanks Stefan!)
 
-
 0.03	Thu Mar 10 23:26:14 2005
-
     - Changed $\ interaction in line with changes in Perl 6 design
       (C<say @stuff> is now always equivalent to C<print @stuff, "\n">)
-
     - Fixed multiple export (added import()) (thanks Schwern)
 
-
 0.04	Fri Apr  8 04:03:10 2005
-
     - Added correct handling of default call to use $_, like print
       (thanks Schwern)
-
 
 0.05	Mon Apr 25 22:42:54 2005
 
 
-
-
 0.5.1  Sun Jul 16 08:06:28 2006
-
     - Fixed doc nit
-
     - Corrected handling of C<select>'d default filehandles
-
     - Fixed test using Test::Builder (thanks David, Jim, et al.)
+
+0.06 Jul 27 2006 (I think)
+    - First non-beta upload to CPAN by co-maintainer James E Keenan
+    - Many tests added and documentation expanded
+    - Now properly handles select-ed filehandles
+
+0.07 Wed Sep  6 21:49:18 EDT 2006
+    - Made Makefile.PL non-executable, per CPANTS recommendation.

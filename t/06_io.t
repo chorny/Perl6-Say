@@ -2,9 +2,7 @@
 # 06_io.t - test say() when printing to FileHandle and IO::File objects
 use strict;
 use warnings;
-use Test::More 
-tests => 22;
-# qw(no_plan);
+use Test::More tests => 22;
 use lib ( qq{./t/lib} );
 BEGIN {
     use_ok('Perl6::Say');

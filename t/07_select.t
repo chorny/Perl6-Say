@@ -2,9 +2,7 @@
 # 07_select.t - test say() when select is called after filehandle is opened
 use strict;
 use warnings;
-use Test::More 
-tests => 19;
-# qw(no_plan);
+use Test::More tests => 19;
 use lib ( qq{./t/lib} );
 BEGIN {
     use_ok('Perl6::Say');

@@ -2,9 +2,7 @@
 # 01_stdout.t - basic tests of say()
 use strict;
 use warnings;
-use Test::More 
-tests => 16;
-# qw(no_plan);
+use Test::More tests => 16;
 use lib ( qq{./t/lib} );
 BEGIN {
     use_ok('Perl6::Say');

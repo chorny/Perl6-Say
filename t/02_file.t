@@ -2,9 +2,7 @@
 # 02_file.t - test say() when printing via filehandle to file
 use strict;
 use warnings;
-use Test::More 
-tests => 28;
-# qw(no_plan);
+use Test::More tests => 28;
 use lib ( qq{./t/lib} );
 BEGIN {
     use_ok('Perl6::Say');
