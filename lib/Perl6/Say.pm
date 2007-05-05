@@ -1,7 +1,7 @@
 package Perl6::Say;
 use strict;
 use warnings;
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 use IO::Handle;
 use Scalar::Util 'openhandle';
 use Carp;
@@ -94,7 +94,7 @@ C<Perl6::Say::say()> can be used in all the following situations.
     $string = q{};
     open FH, ">", \$string;
     say FH qq{Hello World};            # print to a string
-    close FH;
+    close FH;                          # requires Perl 5.8.0 or later
 
     use FileHandle;
     $fh = FileHandle->new($file, 'w');
@@ -111,7 +111,7 @@ C<Perl6::Say::say()> can be used in all the following situations.
     }
 
     $string = q{};
-    open FH, ">", \$string;
+    open FH, ">", \$string;             # requires Perl 5.8.0 or later
     select(FH);
     say qq{Hello World};
     close FH;
@@ -131,6 +131,14 @@ IO::Handle version 1.27 or later (which, confusingly, is
 found in IO distribution 1.23 and later) also implements a C<say>
 method.   Perl6::Say provides its own C<say> method to IO::Handle
 if C<IO::Handle::say> is not available.
+
+=head2 Usage with Older Perls
+
+As noted above, some aspects of C<Perl6::Say::say()> will not work with
+versions of Perl earlier than 5.8.0.  This is not due to any problem with this
+module; it is simply that Perl did not support printing to an in-memory file
+(C<print \$string, "\n";>) prior to that point.  (Thanks to a CPAN testers
+report from David Cantrell for identifying this limitation.)
 
 =head1 WARNING
 

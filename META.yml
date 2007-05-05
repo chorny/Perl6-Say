@@ -1,14 +1,17 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Perl6-Say
-version:      0.07
-version_from: lib/Perl6/Say.pm
-installdirs:  site
-requires:
+--- #YAML:1.0
+name:                Perl6-Say
+version:             0.08
+abstract:            'print' -- but no newline needed
+license:             ~
+generated_by:        ExtUtils::MakeMaker version 6.31
+distribution_type:   module
+requires:     
     Carp:                          0
     IO::Handle:                    0
     Scalar::Util:                  1.07
     Test::More:                    0.44
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
+    version: 1.2
+author:
+    - James E Keenan (jkeenan@cpan.org)

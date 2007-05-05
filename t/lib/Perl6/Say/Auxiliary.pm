@@ -1,6 +1,6 @@
 package Perl6::Say::Auxiliary;
 # Contains test subroutines for distribution with Perl6::Say
-# As of:  September 6, 2006
+# As of:  May 5, 2007
 use strict;
 require Exporter;
 our @ISA       = qw(Exporter);
