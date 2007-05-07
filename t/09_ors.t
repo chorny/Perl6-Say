@@ -13,7 +13,7 @@ my $str = q{Hello World};
 my $capture = q{};
 
 SKIP: {
-    my $skipped_tests = ( 3 - 1);
+    my $skipped_tests = ( 3 - 2);
     eval { require 5.8.0 };
     my $reason =
       q{Writing to in-memory files (>\$string) not supported prior to Perl 5.8};

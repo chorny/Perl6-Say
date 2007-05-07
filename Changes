@@ -35,3 +35,6 @@ Revision history for Perl extension Perl6::Say.
 0.08 Sat May  5 12:51:29 EDT 2007
     - Added SKIP blocks to 3 test files (05-, 07-, 09-) to skip tests that
       require printing to in-memory file.  Modified POD accordingly.
+
+0.09 Sun May  6 21:03:30 EDT 2007
+    - Corrected calculation of number of skipped tests in t/09.
