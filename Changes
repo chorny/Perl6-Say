@@ -38,3 +38,6 @@ Revision history for Perl extension Perl6::Say.
 
 0.09 Sun May  6 21:03:30 EDT 2007
     - Corrected calculation of number of skipped tests in t/09.
+
+0.10 Tue Oct 30 21:35:40 EDT 2007
+    - Require 5.6.2.

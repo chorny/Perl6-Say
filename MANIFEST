@@ -3,7 +3,6 @@ lib/Perl6/Say.pm
 Makefile.PL
 MANIFEST
 MANIFEST.SKIP
-META.yml			Module meta-data (added by MakeMaker)
 README
 t/01_stdout.t
 t/02_file.t
@@ -15,3 +14,4 @@ t/07_select.t
 t/08_iohandle_say.t
 t/09_ors.t
 t/lib/Perl6/Say/Auxiliary.pm
+META.yml                                 Module meta-data (added by MakeMaker)

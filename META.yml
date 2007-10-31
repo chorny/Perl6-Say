@@ -1,9 +1,9 @@
 --- #YAML:1.0
 name:                Perl6-Say
-version:             0.09
+version:             0.10
 abstract:            'print' -- but no newline needed
 license:             ~
-generated_by:        ExtUtils::MakeMaker version 6.31
+generated_by:        ExtUtils::MakeMaker version 6.32
 distribution_type:   module
 requires:     
     Carp:                          0
