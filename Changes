@@ -41,3 +41,6 @@ Revision history for Perl extension Perl6::Say.
 
 0.10 Tue Oct 30 21:35:40 EDT 2007
     - Require 5.6.2.
+
+0.11 Thu Nov  1 19:40:47 EDT 2007
+    - Require 5.6.2 in Makefile.PL.

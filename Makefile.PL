@@ -1,4 +1,5 @@
 use ExtUtils::MakeMaker;
+require 5.006_002;
 
 WriteMakefile(
     NAME            => q[Perl6::Say],

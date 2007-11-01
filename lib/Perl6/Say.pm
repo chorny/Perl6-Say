@@ -1,8 +1,8 @@
 package Perl6::Say;
 use strict;
 use warnings;
-require 5.006002;
-our $VERSION = '0.10';
+require 5.006_002;
+our $VERSION = '0.11';
 use IO::Handle;
 use Scalar::Util 'openhandle';
 use Carp;
