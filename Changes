@@ -1,3 +1,4 @@
+#$Id: Changes 1214 2008-02-09 23:41:58Z jimk $
 Revision history for Perl extension Perl6::Say.
 
 0.01  Thu Mar 25 22:00:02 2004
@@ -44,3 +45,6 @@ Revision history for Perl extension Perl6::Say.
 
 0.11 Thu Nov  1 19:40:47 EDT 2007
     - Require 5.6.2 in Makefile.PL.
+
+0.12 Sat Feb  9 19:35:26 AST 2008
+    - Provide documentation and examples on say() in Perl 5.10.

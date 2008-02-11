@@ -1,4 +1,5 @@
 #  !perl
+#$Id: 06_io.t 1213 2008-02-09 23:40:34Z jimk $
 # 06_io.t - test say() when printing to FileHandle and IO::File objects
 use strict;
 use warnings;

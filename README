@@ -1,14 +1,15 @@
+#$Id: README 1214 2008-02-09 23:41:58Z jimk $
 Perl6::Say - 'print' -- but no newline needed
 
-This document refers to version 0.11 of Perl6::Say.  
-This version was released November 1, 2007.
+This document refers to version 0.12 of Perl6::Say.  
+This version was released February 10, 2008.
 
 To install this module on your system, place the tarball archive file in a 
 temporary directory and call the following:
 
-% gunzip Perl6-Say-0.11.tar.gz
-% tar xf Perl6-Say-0.11.tar
-% cd Perl6-Say-0.11
+% gunzip Perl6-Say-0.12.tar.gz
+% tar xf Perl6-Say-0.12.tar
+% cd Perl6-Say-0.12
 % perl Makefile.PL
 % make
 % make test

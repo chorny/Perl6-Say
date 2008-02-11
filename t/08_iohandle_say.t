@@ -1,4 +1,5 @@
 #  !perl
+#$Id: 08_iohandle_say.t 1213 2008-02-09 23:40:34Z jimk $
 # 08_iohandle_say.t - test say() vs. IO::Handle::say()
 use strict;
 use warnings;

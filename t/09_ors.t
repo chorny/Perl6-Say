@@ -1,4 +1,5 @@
 #  !perl
+#$Id: 09_ors.t 1215 2008-02-09 23:46:05Z jimk $
 # 09_ors.t - test interaction with $\
 use strict;
 use warnings;
@@ -14,7 +15,7 @@ my $capture = q{};
 
 SKIP: {
     my $skipped_tests = ( 3 - 2);
-    eval { require 5.8.0 };
+    eval { require 5.008 };
     my $reason =
       q{Writing to in-memory files (>\$string) not supported prior to Perl 5.8};
     skip $reason,

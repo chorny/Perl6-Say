@@ -1,4 +1,5 @@
 #  !perl
+#$Id: 01_stdout.t 1213 2008-02-09 23:40:34Z jimk $
 # 01_stdout.t - basic tests of say()
 use strict;
 use warnings;

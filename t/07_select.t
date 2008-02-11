@@ -1,4 +1,5 @@
 #  !perl
+#$Id: 07_select.t 1215 2008-02-09 23:46:05Z jimk $
 # 07_select.t - test say() when select is called after filehandle is opened
 use strict;
 use warnings;
@@ -19,7 +20,7 @@ my ($say_sub, $msg, @list);
 
 SKIP: {
     my $skipped_tests = (19 - 3);
-    eval { require 5.8.0 };
+    eval { require 5.008 };
     my $reason =
       q{Writing to in-memory files (>\$string) not supported prior to Perl 5.8};
     skip $reason,

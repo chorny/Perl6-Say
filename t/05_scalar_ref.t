@@ -1,4 +1,5 @@
 #  !perl
+#$Id: 05_scalar_ref.t 1215 2008-02-09 23:46:05Z jimk $
 # 05_scalar_ref.t - test say() when printing to string via reference to scalar
 use strict;
 use warnings;
@@ -22,7 +23,7 @@ my ($say_sub, $msg, @list);
 
 SKIP: {
     my $skipped_tests = (27 - 3);
-    eval { require 5.8.0 };
+    eval { require 5.008 };
     my $reason =
       q{Writing to in-memory files (>\$string) not supported prior to Perl 5.8};
     skip $reason,

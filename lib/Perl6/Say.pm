@@ -1,8 +1,9 @@
 package Perl6::Say;
+#$Id: 01-feature.pl 1207 2008-02-09 23:22:29Z jimk $
 use strict;
 use warnings;
 require 5.006_002;
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 use IO::Handle;
 use Scalar::Util 'openhandle';
 use Carp;
@@ -61,6 +62,16 @@ Perl6::Say - C<print> -- but no newline needed
     say undef;             # same as:  print "\n";
 
 =head1 DESCRIPTION
+
+=head2 Note for Users of Perl 5.10
+
+You don't need this module.  The Perl 6 C<say> function is available in Perl
+5.10 by saying C<use feature 'say';>.  Hence, this module is of interest only
+to users of Perl 5.6 and 5.8.
+
+If you have Perl 5.10 installed, see the F<510/> directory in this
+distribution for some elementary examples of C<say> taken from C<perldoc
+feature>.
 
 =head2 General
 

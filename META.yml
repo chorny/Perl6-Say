@@ -1,9 +1,11 @@
 --- #YAML:1.0
 name:                Perl6-Say
-version:             0.11
+version:             0.12
 abstract:            'print' -- but no newline needed
 license:             ~
-generated_by:        ExtUtils::MakeMaker version 6.32
+author:              
+    - James E Keenan (jkeenan@cpan.org)
+generated_by:        ExtUtils::MakeMaker version 6.42
 distribution_type:   module
 requires:     
     Carp:                          0
@@ -11,7 +13,5 @@ requires:
     Scalar::Util:                  1.07
     Test::More:                    0.44
 meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
-    version: 1.2
-author:
-    - James E Keenan (jkeenan@cpan.org)
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3

@@ -1,4 +1,5 @@
 #  !perl
+#$Id: 04_file_list.t 1213 2008-02-09 23:40:34Z jimk $
 # 04_file_list.t - test say() when printing lists via filehandle to file
 use strict;
 use warnings;

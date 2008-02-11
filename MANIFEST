@@ -1,3 +1,6 @@
+510/01-feature.pl
+510/02-bundle.pl
+510/03-implicit.pl
 Changes
 lib/Perl6/Say.pm
 Makefile.PL
