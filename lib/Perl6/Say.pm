@@ -3,7 +3,7 @@ package Perl6::Say;
 use strict;
 use warnings;
 require 5.006_002;
-our $VERSION = '0.12';
+our $VERSION = '0.14';
 use IO::Handle;
 use Scalar::Util 'openhandle';
 use Carp;
@@ -41,7 +41,7 @@ use strict 'refs';
 
 =head1 NAME
 
-Perl6::Say - C<print> -- but no newline needed
+Perl6::Say - C<print()>, but no newline needed
 
 =head1 SYNOPSIS
 
