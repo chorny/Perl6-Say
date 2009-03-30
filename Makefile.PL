@@ -1,6 +1,6 @@
 #$Id: Makefile.PL 1214 2008-02-09 23:41:58Z jimk $
 use ExtUtils::MakeMaker;
-require 5.006_002;
+require 5.008;
 
 WriteMakefile(
     NAME            => q[Perl6::Say],
