@@ -16,8 +16,8 @@ use Carp;
 *is = *Test::More::is;
 
 our $capture_fail_message;
-eval qq{ require IO::Capture::Stdout1; };
-$capture_fail_message="tests require IO::Capture::Stdout" if $@;
+eval qq{ require IO::CaptureOutput; };
+$capture_fail_message="tests require IO::CaptureOutput" if $@;
 
 sub _validate {
     my $pred = shift;
@@ -36,11 +36,14 @@ sub capture_say {
     }
     my $pred  = $argsref->{pred};
     my $l = _validate($pred);
-    my $capture = IO::Capture::Stdout->new();
-    $capture->start;
-    &{$argsref->{eval}};
-    $capture->stop;
-    my $cat = join q{}, $capture->read();
+    my $cat;
+    #IO::CaptureOutput->import('capture');
+    IO::CaptureOutput::capture(sub { &{$argsref->{eval}}; },\$cat);
+    #my $capture = IO::Capture::Stdout->new();
+    #$capture->start;
+    #&{$argsref->{eval}};
+    #$capture->stop;
+    #my $cat = join q{}, $capture->read();
     unless ($str) {
         $str = join q{}, @list;
     }
