@@ -10,9 +10,14 @@ our @EXPORT_OK = qw(
     capture_say
     capture_say_file
     capture_say_scalar
+    $capture_fail_message
 );
 use Carp;
 *is = *Test::More::is;
+
+our $capture_fail_message;
+eval qq{ require IO::Capture::Stdout1; };
+$capture_fail_message="tests require IO::Capture::Stdout" if $@;
 
 sub _validate {
     my $pred = shift;

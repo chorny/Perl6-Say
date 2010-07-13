@@ -8,13 +8,12 @@ use lib ( qq{./t/lib} );
 BEGIN {
     use_ok('Perl6::Say');
     use_ok('Carp');
-    use_ok('Perl6::Say::Auxiliary', qw| _validate capture_say |);
+    use_ok('Perl6::Say::Auxiliary', qw| _validate capture_say $capture_fail_message |);
 };
 
 SKIP: {
-    eval qq{ require IO::Capture::Stdout; };;
-    skip "tests require IO::Capture::Stdout", 
-        8 if $@;
+    skip $capture_fail_message,
+        8 if $capture_fail_message;
 
     my (@list, $say_sub, $msg);
 
