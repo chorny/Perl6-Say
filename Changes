@@ -1,6 +1,12 @@
 #$Id: Changes 1344 2009-03-16 03:27:56Z jimk $
 Revision history for Perl extension Perl6::Say.
 
+0.16
+
+    - Build.PL added
+
+-----------------
+
 0.01  Thu Mar 25 22:00:02 2004
 	- original version; created by h2xs 1.22 with options
 		-A -P -X -f -n Perl6::Say

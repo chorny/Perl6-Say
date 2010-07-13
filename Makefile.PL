@@ -12,5 +12,6 @@ WriteMakefile(
         IO::Handle      => 0,       # in the Perl core
         Scalar::Util    => 1.07,    # in the Perl core since 5.007003
         Carp            => 0,       # in the Perl core
-    }
+    },
+    PL_FILES=> {},
 );
