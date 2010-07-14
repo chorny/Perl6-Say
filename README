@@ -1,15 +1,10 @@
-#$Id: README 1344 2009-03-16 03:27:56Z jimk $
 Perl6::Say - 'print' -- but no newline needed
 
-This document refers to version 0.15 of Perl6::Say.  
-This version was released March 29, 2009.
+This document refers to version 0.16 of Perl6::Say.  
 
-To install this module on your system, place the tarball archive file in a 
+To install this module on your system, unpack the tarball archive file in a 
 temporary directory and call the following:
 
-% gunzip Perl6-Say-0.15.tar.gz
-% tar xf Perl6-Say-0.15.tar
-% cd Perl6-Say-0.15
 % perl Makefile.PL
 % make
 % make test
@@ -38,6 +33,10 @@ Original author:  Damian Conway
 Maintainer since July 2006 (version 0.05_002):  James E Keenan
 CPAN ID:  JKEENAN
 jkeenan@cpan.org
+
+Maintainer since July 2010 (version 0.16):  Alexandr Ciornii
+CPAN ID:  CHORNY
+alexchorny@gmail.com
 
 Dependencies:  Uses only modules found in the Perl Core as of 5.007003.
 For use with older Perls, see Makefile.PL.

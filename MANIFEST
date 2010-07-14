@@ -6,6 +6,7 @@ MANIFEST			This list of files
 MANIFEST.SKIP
 README
 t/01_stdout.t
+t/01_stdout-mod.t
 t/02_file.t
 t/03_list.t
 t/04_file_list.t
