@@ -4,6 +4,7 @@ Revision history for Perl extension Perl6::Say.
 0.16
 
     - Build.PL added
+    - tests fixed
 
 -----------------
 

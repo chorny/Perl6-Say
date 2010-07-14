@@ -31,3 +31,4 @@ svndiff/
 ^init
 ^results
 ^htmlify
+^MYMETA.yml$
