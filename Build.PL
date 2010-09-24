@@ -11,9 +11,11 @@ my $build = Module::Build->new(
   'requires' => {
     'perl' => '5.008',
     'Scalar::Util' => '1.07',
-    'Test::More' => '0.44',
     'IO::Handle' => 0,
     'Carp' => 0
+  },
+  'build_requires' => {
+    'Test::More' => '0.44',
   },
   'meta_merge' => {
     'resources' => {
