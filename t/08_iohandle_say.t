@@ -19,6 +19,9 @@ SKIP: {
     $skipped_tests
     if $@;
 
+    skip $Perl6::Say::Auxiliary::capture_fail_message, $skipped_tests
+    if $Perl6::Say::Auxiliary::capture_fail_message;
+
     SKIP: {
         skip "tests require IO::Handle module version 1.27 or greater",
         $skipped_tests
